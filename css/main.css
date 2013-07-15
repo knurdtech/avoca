@@ -1,0 +1,4 @@
+/* Use border-box everywhere (unless overwritten by more specific normalize rules)
+	"border-box" should not need prefixing, however, "padding-box" still does */
+
+* { box-sizing: border-box;}
