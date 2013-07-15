@@ -6,7 +6,7 @@
   <meta name="keywords" content="AVOCA Coffee">
   <meta name="description" content="">
   <title>AVOCA Coffee</title>
-  <link rel="shortcut icon" type="image/x-icon" href="http://avocacoffee.com/wp-content/themes/clockstone/images/bgs/f9bd78abb9405c0163a91bafa8a8a695.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/f9bd78abb9405c0163a91bafa8a8a695.jpg">
   <link rel="canonical" href="http://avocacoffee.com/">
 
   <!-- Useful for RWD -->
@@ -26,24 +26,97 @@
 
 <div id="page">
 
-  <header>
+  <header id="header">
 
-    <hgroup>
-      <h1>Heading title</h1>
-      <h2>Site tagline</h2>
-    </hgroup>
+    <a class="logo" title="AVOCA Coffee" href="http://avocacoffee.com/">
+      <img alt="AVOCA Coffee" src="/assets/5904aad892fa2c965be2bbf92b277866.png">
+    </a>
 
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">gallery</a></li>
-        <li><a href="#">about</a></li>
+    <div class="top_line"> <!-- Social buttons (removed wp-login and search) -->
+      <div class="inp_l">
+        <div class="inp_r">
+          <ul>
+            <li>
+              <a class="link_tooltip" href="http://twitter.com/avocacoffee" target="_blank">
+                <img alt="twitter" src="http://avocacoffee.com/wp-content/themes/clockstone/images/social_icons/twitter.png">
+              </a>
+            </li>
+            <li>
+              <a class="link_tooltip" href="https://www.facebook.com/pages/AVOCA-Coffee/151525624872668" target="_blank">
+                <img alt="facebook" src="http://avocacoffee.com/wp-content/themes/clockstone/images/social_icons/facebook.png">
+              </a>
+            </li>
+            <li>
+              <a class="link_tooltip" href="mailto:info@avocacoffee.com" target="_blank">
+                <img alt="email" src="http://avocacoffee.com/wp-content/themes/clockstone/images/social_icons/email.png">
+              </a>
+            </li>
+            <li>
+              <a class="link_tooltip" href="https://plus.google.com/u/0/106486154488885526143/posts" target="_blank">
+                <img alt="google" src="http://avocacoffee.com/wp-content/themes/clockstone/images/social_icons/google.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navigation">
+      <ul class="sf-js-enabled">
+        <li class="current_page_item">
+          <a title="Home" href="http://avocacoffee.com/">Home</a>
+        </li>
+        <li class="page_item page-item-51">
+          <a href="http://avocacoffee.com/aboutus/">About Us</a>
+          <ul class="children sf-js-enabled" style="display: none; visibility: hidden;">
+            <li class="page_item page-item-742">
+              <a href="http://avocacoffee.com/aboutus/artist-of-the-month/">Artist of the Month</a>
+            </li>
+            <li class="page_item page-item-744">
+              <a href="http://avocacoffee.com/aboutus/events/">Events</a>
+            </li>
+            <li class="page_item page-item-809">
+              <a href="http://avocacoffee.com/aboutus/press/">Local Press</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page_item page-item-103">
+          <a href="http://avocacoffee.com/product/">Shop</a>
+          <ul class="children sf-js-enabled" style="display: none; visibility: hidden;">
+            <li class="page_item page-item-919">
+              <a href="http://avocacoffee.com/product/single_origin/">Single Origin</a>
+            </li>
+            <li class="page_item page-item-714">
+              <a href="http://avocacoffee.com/product/espressos/">Espressos</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page_item page-item-700">
+          <a href="http://avocacoffee.com/training/">Training</a>
+          <ul class="children sf-js-enabled" style="display: none; visibility: hidden;">
+            <li class="page_item page-item-705">
+              <a href="http://avocacoffee.com/training/education/">Roasting Techniques</a>
+            </li>
+            <li class="page_item page-item-740">
+              <a href="http://avocacoffee.com/training/brewing-techniques/">Brewing Techniques</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page_item page-item-695">
+          <a href="http://avocacoffee.com/wholesale/">Wholesale</a>
+        </li>
+        <li class="page_item page-item-499">
+          <a href="http://avocacoffee.com/home-blog/">Blog</a>
+        </li>
+        <li class="page_item page-item-483">
+          <a href="http://avocacoffee.com/contacts/">Contact</a>
+        </li>
       </ul>
     </nav>
 
   </header>
 
+  <div id="container">
   <article>
     <header>
       <h1><a href="#" rel="bookmark" title="link to this post">Post heading</a></h1>
@@ -51,6 +124,7 @@
     </header>
     <p>Actual article</p>
   </article>
+  </div> <!-- end #container -->
 
   <footer>
     

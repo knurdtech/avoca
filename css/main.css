@@ -5,5 +5,180 @@
 
 body {
 	background-color: #433834;
-	background: url(http://avocacoffee.com/wp-content/themes/clockstone/images/bgs/bg_i_10.jpg) top center no-repeat fixed;
+	/* 1.1 MB 1920x1200 background image */
+	background: url(/assets/bg_i_10.jpg) top center no-repeat fixed;
+}
+
+header {
+	height: 142px;
+}
+
+.logo {
+	width:330px;
+	height:104px;
+	top:8px;
+	left:22px;
+}
+
+.top_line {
+	top:18px;
+	left:651px;
+}
+
+a.logo {
+    display: block;
+    height: 50px;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+    width: 250px;
+}
+
+.top_line {
+    overflow: hidden;
+    padding: 0 4px 0 0;
+    position: absolute;
+    top: 25px;
+}
+
+.inp_l {
+    background: url("/assets/inp_l.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 37px;
+    padding: 0 0 0 10px;
+}
+.inp_r {
+    background: url("/assets/inp_r.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 37px;
+    padding: 0 10px 0 0;
+}
+.top_line .inp_l, .search_line .inp_l {
+    float: left;
+    margin: 0 0 0 11px;
+}
+#header .inp_l {
+    float: none;
+    margin: 0;
+}
+.top_line .inp_l ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.top_line .inp_l ul li {
+    float: left;
+    margin: 0;
+    padding: 10px 6px 0 0;
+}
+#navigation, #header .navigation {
+    left: 20px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    z-index: 210;
+}
+#navigation li, #header .navigation li {
+    background: url("/assets/nav_l.png") no-repeat scroll left 0 transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 0 2px 0 0;
+    padding: 0 0 0 10px;
+    position: relative;
+    z-index: 220;
+}
+#navigation li a, #header .navigation li a {
+    background: url("/assets/nav_r.png") no-repeat scroll right 0 transparent;
+    color: #FEFEFE;
+    display: block;
+    height: 29px;
+    min-width: 55px;
+    padding: 8px 17px 0 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 230;
+}
+#navigation li.current-menu-item, #navigation li:hover, #navigation li.current-menu-ancestor, #header .navigation li.current_page_item, #header .navigation li:hover, #header .navigation li.current_page_ancestor {
+    background: url("/assets/nav_l.png") no-repeat scroll left -37px transparent;
+}
+#navigation li.current-menu-item a, #navigation li:hover a, #navigation li.current-menu-ancestor a, #header .navigation li.current_page_item a, #header .navigation li:hover a, #header .navigation li.current_page_ancestor a {
+    background: url("/assets/nav_r.png") no-repeat scroll right -37px transparent;
+    color: #191919;
+}
+#navigation li ul, #header .navigation li ul {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 5px 0;
+    position: absolute;
+    top: 39px;
+    z-index: 240;
+}
+#navigation li li, #header .navigation li li {
+    background: none repeat scroll 0 0 transparent;
+    float: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 250;
+}
+#navigation li li, #navigation li.current-menu-ancestor li, #navigation li.current-menu-item li, #navigation li:hover li, #header .navigation li li, #header .navigation li.current_page_ancestor li, #header .navigation li.current_page_item li, #header .navigation li:hover li {
+    background: none repeat scroll 0 0 transparent;
+}
+#navigation li li a, #header .navigation li li a {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: auto;
+    overflow: hidden;
+    padding: 5px 20px;
+    position: relative;
+    text-align: left;
+    width: 135px;
+}
+#navigation li.current-menu-ancestor li, #navigation li.current-menu-ancestor li a, #header .navigation li.current-menu-ancestor li, #header .navigation li.current-menu-ancestor li a {
+    background: none repeat scroll 0 0 transparent;
+}
+#navigation li li a, #navigation li.current-menu-item li a, #navigation li.current-menu-ancestor li a, #navigation li:hover li a, #header .navigation li li a, #header .navigation li.current_page_item li a, #header .navigation li.current_page_ancestor li a, #header .navigation li:hover li a {
+    background: none repeat scroll 0 0 transparent;
+    color: #FEFEFE;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor a, #navigation li.current-menu-ancestor li.current-menu-item a, #navigation li:hover li:hover a, #header .navigation li.current_page_ancestor li.current_page_ancestor a, #header .navigation li.current_page_ancestor li.current_page_item a, #header .navigation li:hover li:hover a {
+    color: #E6E1A8;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li a, #navigation li.current-menu-ancestor li.current-menu-item li a, #navigation li:hover li:hover li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li a, #header .navigation li.current_page_ancestor li.current_page_item li a, #header .navigation li:hover li:hover li a {
+    color: #FEFEFE;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor a, #navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-item a, #navigation li:hover li:hover li:hover a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_item a, #header .navigation li:hover li:hover li:hover a {
+    color: #E6E1A8;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li a, #navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-item li a, #navigation li:hover li:hover li:hover li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_item li a, #header .navigation li:hover li:hover li:hover li a {
+    color: #FEFEFE;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor a, #navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-item a, #navigation li:hover li:hover li:hover li:hover a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_item a, #header .navigation li:hover li:hover li:hover li:hover a {
+    color: #E6E1A8;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li a, #navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-item li a, #navigation li:hover li:hover li:hover li:hover li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_item li a, #header .navigation li:hover li:hover li:hover li:hover li a {
+    color: #FEFEFE;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor a, #navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-item a, #navigation li:hover li:hover li:hover li:hover li:hover a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_item a, #header .navigation li:hover li:hover li:hover li:hover li:hover a {
+    color: #E6E1A8;
+}
+#navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li a, #navigation li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-ancestor li.current-menu-item li a, #navigation li:hover li:hover li:hover li:hover li:hover li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li a, #header .navigation li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_ancestor li.current_page_item li a, #header .navigation li:hover li:hover li:hover li:hover li:hover li a {
+    color: #FEFEFE;
+}
+#navigation li li ul, #header .navigation li li ul {
+    left: 177px;
+    list-style: none outside none;
+    margin: -5px 0;
+    position: absolute;
+    top: 0;
+    z-index: 240;
 }
