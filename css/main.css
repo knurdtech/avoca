@@ -2,3 +2,8 @@
 	"border-box" should not need prefixing, however, "padding-box" still does */
 
 * { box-sizing: border-box;}
+
+body {
+	background-color: #433834;
+	background: url(http://avocacoffee.com/wp-content/themes/clockstone/images/bgs/bg_i_10.jpg) top center no-repeat fixed;
+}
